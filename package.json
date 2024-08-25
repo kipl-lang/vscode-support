@@ -1,0 +1,25 @@
+{
+  "name": "kipl",
+  "displayName": "Kipl",
+  "description": "Kipl programming language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "kipl",
+      "aliases": ["Kipl", "kipl"],
+      "extensions": [".kipl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "kipl",
+      "scopeName": "source.kipl",
+      "path": "./syntaxes/kipl.tmLanguage.json"
+    }]
+  }
+}
