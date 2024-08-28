@@ -6,15 +6,32 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#types"
+		},
+		{
 			"include": "#strings"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.kipl",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"patterns": [
+				{
+					"name": "keyword.control.kipl",
+					"match": "\\b(if|else|break|continue|return)\\b"
+				},
+				{
+					"name": "keyword.declaration.kipl",
+					"match": "\\b(var|const|func)\\b"
+				}
+			]
+		},
+		"types": {
+			"patterns": [
+				{
+					"name": "storage.type.kipl",
+					"match": "\\b(i8|i16|i32|i64|u8|u16|u32|u64|f32|f64|bool|string)\\b"
+				}
+			]
 		},
 		"strings": {
 			"name": "string.quoted.double.kipl",

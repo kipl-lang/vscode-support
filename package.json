@@ -6,9 +6,18 @@
   "engines": {
     "vscode": "^1.92.0"
   },
+  "icon": "images/icon.png",
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/kipl-lang/vscode-supprt"
+	},
+  "keywords": [
+		"Kipl",
+		"kipl"
+	],
   "contributes": {
     "languages": [{
       "id": "kipl",
@@ -20,6 +29,13 @@
       "language": "kipl",
       "scopeName": "source.kipl",
       "path": "./syntaxes/kipl.tmLanguage.json"
-    }]
+    }],
+    "fileAssociations": [
+			{
+				"language": "kipl",
+				"pattern": "*.kipl",
+				"icon": "images/icon.png"
+			}
+		]
   }
 }
